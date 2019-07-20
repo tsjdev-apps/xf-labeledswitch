@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XFLabeledSwitch.Controls.LabeledSwitch"
+             x:Name="LabeledSwitchRoot">
+
+    <ContentView.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnTapped" />
+    </ContentView.GestureRecognizers>
+
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TitleLabelStyle"
+                   TargetType="Label">
+                <Setter Property="FontSize"
+                        Value="15" />
+                <Setter Property="TextColor"
+                        Value="#FF000000" />
+            </Style>
+
+            <Style x:Key="DetailLabelStyle"
+                   TargetType="Label">
+                <Setter Property="FontSize"
+                        Value="13" />
+                <Setter Property="TextColor"
+                        Value="#FFA4A4A4" />
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <ContentView.Content>
+        <Grid InputTransparent="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Spacing="0"
+                         Grid.Row="0"
+                         VerticalOptions="Center">
+                <Label Text="{Binding Title, Source={x:Reference LabeledSwitchRoot}}"
+                       Style="{StaticResource TitleLabelStyle}" />
+                <Label Text="{Binding Detail, Source={x:Reference LabeledSwitchRoot}}"
+                       Style="{StaticResource DetailLabelStyle}" />
+            </StackLayout>
+
+            <Switch IsToggled="{Binding IsChecked, Source={x:Reference LabeledSwitchRoot}, Mode=TwoWay}"
+                    VerticalOptions="Center"
+                    Grid.Column="1" />
+        </Grid>
+    </ContentView.Content>
+
+</ContentView>
