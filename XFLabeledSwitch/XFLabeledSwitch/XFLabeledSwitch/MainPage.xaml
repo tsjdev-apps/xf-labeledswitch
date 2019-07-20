@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:XFLabeledSwitch.Controls"
              mc:Ignorable="d"
-             x:Class="XFLabeledSwitch.MainPage">
+             x:Class="XFLabeledSwitch.MainPage"
+             Padding="18">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <controls:LabeledSwitch Title="My Title"
+                                Detail="My Detail" />
     </StackLayout>
 
 </ContentPage>
