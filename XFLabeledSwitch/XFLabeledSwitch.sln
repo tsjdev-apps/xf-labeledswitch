@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFLabeledSwitch.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFLabeledSwitch.iOS", "XFLabeledSwitch\XFLabeledSwitch.iOS\XFLabeledSwitch.iOS.csproj", "{3994B4D5-9580-4CF5-90E9-D23A093E4DC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFLabeledSwitch", "XFLabeledSwitch\XFLabeledSwitch\XFLabeledSwitch.csproj", "{CB1C59A0-6C05-45A7-8EC5-3C93E2A3777E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XFLabeledSwitch", "XFLabeledSwitch\XFLabeledSwitch\XFLabeledSwitch.csproj", "{CB1C59A0-6C05-45A7-8EC5-3C93E2A3777E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

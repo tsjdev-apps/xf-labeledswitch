@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace XFLabeledSwitch.Controls
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+	[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LabeledSwitch : ContentView
     {
         public static readonly BindableProperty TitleProperty =
@@ -45,7 +40,6 @@ namespace XFLabeledSwitch.Controls
         {
             InitializeComponent();
         }
-
 
         private void OnTapped(object sender, EventArgs e)
         {
